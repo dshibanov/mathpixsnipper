@@ -1,9 +1,18 @@
-# API Examples
+## Mathpixsnipper is getting latex code from screenshot via Mathpix API
 
-## Docs 
+#### How to use
 
-Some API examples for the image to Latex API that powers mathpix.com as well as others.  The general docs for the API can be found here: http://docs.mathpix.com
+1. Put conf.json to ~/.config/mathpixsnipper/ and add your Mathpix API keys. 
+(You need Mathpix account for that)
 
-The purpose of this repo is to provide illustrative examples for various platforms.  Please use https://github.com/mathpix/ios-sample for a sample iOS app and use https://github.com/mathpix/android-sample for an Android one.
+2. $ python mathpixsnipper.py
+3. select area
+4. done. snipper will return latex code to clipboard in case of success
+and error_info in case of any problem.
+5. better to wrap it in a bash script, like this: 
 
-Note: for production use, please request an API key from support@mathpix.com.
+```bash
+#!/bin/bash
+cd /path/to/mathpixsnipper
+python mathpixsnipper.py
+```
