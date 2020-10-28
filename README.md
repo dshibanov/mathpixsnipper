@@ -1,6 +1,4 @@
-## Mathpixsnipper is getting latex code from screenshot via Mathpix API
-
-#### How to use
+## How to use
 
 1. Put conf.json to ~/.config/mathpixsnipper/ and add your Mathpix API keys. 
 (You need Mathpix account for that)
