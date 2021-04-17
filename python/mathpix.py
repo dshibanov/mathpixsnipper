@@ -30,6 +30,10 @@ def image_uri(filename):
     image_data = open(filename, "rb").read()
     return "data:image/jpg;base64," + base64.b64encode(image_data).decode()
 
+def image_uri2(img):
+    
+    return "data:image/jpg;base64," + base64.b64encode(img).decode()
+
 #
 # Call the Mathpix service with the given arguments, headers, and timeout.
 #
